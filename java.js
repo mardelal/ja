@@ -18,20 +18,20 @@ const jsonObj = {
         "name": "TAZA PLATO FLO",
         "precio": "20E",
         "caracteristicas": "Apta para horno"
-        "url":" Y COMO SE ENLAZA EL JAVA??",
+        //"url":" Y COMO SE ENLAZA EL JAVA??",
     },
     {
 
         "name": "TAZA PLATO AZUL",
         "precio": "20E",
         "caracteristicas": "Apta para horno"
-        "url":" Y COMO SE ENLAZA EL JAVA??",
+        //"url":" Y COMO SE ENLAZA EL JAVA??",
     },
     {
         "name": "tAZA MANGO",
         "precio": "20E",
         "caracteristicas": "Apta para horno"
-        "url":" y COMO SE ENLAZA EL JAVA??",
+        //"url":" y COMO SE ENLAZA EL JAVA??",
     }
 ]
 }
@@ -75,5 +75,4 @@ function tienda() {
      tienda()
       showproductos()
     
-  
   

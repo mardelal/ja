@@ -2,10 +2,6 @@
 const pepe = document.getElementById("pepe");
 const juan = document.getElementById("juan");
 
-const section = document.getElementById("section");
-const header = document.getElementById("header");
-
-
 const jsonObj = {
 
     "Vajilla": "Cafe y te",
@@ -16,22 +12,22 @@ const jsonObj = {
 
         {
             "name": "TAZA PLATO FLO",
-            "precio": "20E",
-            "caracteristicas": "Apta para horno"
-            //"url":" Y COMO SE ENLAZA EL JAVA??",
+            "precio": 20,
+            "caracteristicas": "Apta para horno",
+           // "imagen" :"a src=./imgdev/IMG-20231104-WA0000.jpg"
         },
         {
 
             "name": "TAZA PLATO AZUL",
-            "precio": "20E",
-            "caracteristicas": "Apta para horno"
-            //"url":" Y COMO SE ENLAZA EL JAVA??",
+            "precio": 20,
+            "caracteristicas": "Apta para horno",
+            "imagen" :"a src=./imgdev/IMG-20231104-WA0000.jpg"
         },
         {
             "name": "tAZA MANGO",
-            "precio": "20E",
-            "caracteristicas": "Apta para horno"
-            //"url":" y COMO SE ENLAZA EL JAVA??",
+            "precio": 20,
+            "caracteristicas": "Apta para horno",
+            "imagen" :"a src=./imgdev/IMG-20231104-WA0000.jpg"
         }
     ]
 }

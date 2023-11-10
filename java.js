@@ -1,6 +1,6 @@
 
-const pepe = document.getElementById("pepe");
-const juan = document.getElementById("juan");
+const section = document.getElementById("pepe");
+const main = document.getElementById("main");
 
 const jsonObj = {
 
@@ -40,7 +40,7 @@ function tienda() {
 
     const myH1 = document.createElement('h1');
     myH1.textContent = jsonObj["Vajilla"];
-    juan.appendChild(myH1); //appendChild" es un método utilizado 
+    main.appendChild(myH1); //appendChild" es un método utilizado 
     //para agregar un elemento hijo a un elemento padre en el DOM  
 
 

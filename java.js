@@ -1,15 +1,13 @@
 
-const section = document.getElementById("pepe");
+const section = document.getElementById("section");
 const main = document.getElementById("main");
 
 const jsonObj = {
-
     "Vajilla": "Cafe y te",
     "Descripcion": "porcelana",
     "codigo": 25,
     "stock": true,
     "productos": [
-
         {
             "name": "TAZA PLATO FLO",
             "precio": 20,
@@ -33,7 +31,7 @@ const jsonObj = {
 }
 
 jsonObj.active//yo sé lo que contiene cada cosa poniendo el ratón encima, y mediante el punto accedes a todas las características
-jsonObj["productos"][1]["caracteristicas"][2]//para acceder más abajo de la jerarquía de archivos, tienes que concatenar con corchetes
+jsonObj["productos"][1]//para acceder más abajo de la jerarquía de archivos, tienes que concatenar con corchetes
 
 
 function tienda() {
@@ -46,7 +44,7 @@ function tienda() {
 
     const myPara = document.createElement('p');
     myPara.textContent = 'Descripcion: ' + jsonObj.Descripcion + ' // codigo: ' + jsonObj['codigo'];
-    header.appendChild(myPara);
+    main.appendChild(myPara);
 }
 
 function showproductos() {
@@ -58,15 +56,24 @@ function showproductos() {
         const myPara1 = document.createElement('p');
         const myPara2 = document.createElement('p');
         const myPara3 = document.createElement('p');
-        const myList = document.createElement('ul');
 
         myH2.textContent = productos[i].name;
         myPara1.textContent = 'caracteristicas: ' + productos[i].caracteristicas;
         myPara2.textContent = 'precio: ' + productos[i].precio;
 
         //myPara3.textContent = 'url';
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+    
+        section.appendChild(myArticle);
+      }
+
     }
-}
+
 
     console.info(jsonObj)
     console.info(jsonObj.productos[0])

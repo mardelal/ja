@@ -9,23 +9,23 @@ const jsonObj = {
     "stock": true,
     "productos": [
         {
-            "name": "TAZA PLATO FLO",
-            "precio": 20,
+            "name": "TAZA PLATO FLORES",
+            "precio": 20 + " €",
             "caracteristicas": "Apta para horno",
-           // "imagen" :"a src=./imgdev/IMG-20231104-WA0000.jpg"
+            "imagen" :"./imgdev/IMG-20231104-WA0000.jpg"
         },
         {
 
             "name": "TAZA PLATO AZUL",
-            "precio": 20,
+            "precio": 20 + " €",
             "caracteristicas": "Apta para horno",
-            "imagen" :"a src=./imgdev/IMG-20231104-WA0000.jpg"
+            "imagen" :"./imgdev/IMG-20231104-WA0000.jpg"
         },
         {
-            "name": "tAZA MANGO",
-            "precio": 20,
+            "name": "TAZA MANGO",
+            "precio": 20 + " €",
             "caracteristicas": "Apta para horno",
-            "imagen" :"a src=./imgdev/IMG-20231104-WA0000.jpg"
+           
         }
     ]
 }
@@ -43,11 +43,12 @@ function tienda() {
 
 
     const myPara = document.createElement('p');
-    myPara.textContent = 'Descripcion: ' + jsonObj.Descripcion + ' // codigo: ' + jsonObj['codigo'];
+    myPara.textContent ='Descripcion: '  + jsonObj.Descripcion + ' // codigo: ' + jsonObj['codigo'];
     main.appendChild(myPara);
 }
 
 function showproductos() {
+
     const productos = jsonObj['productos'];
 
     for (var i = 0; i < productos.length; i++) {
@@ -56,10 +57,15 @@ function showproductos() {
         const myPara1 = document.createElement('p');
         const myPara2 = document.createElement('p');
         const myPara3 = document.createElement('p');
+        const myImg = document.createElement('img');
 
         myH2.textContent = productos[i].name;
         myPara1.textContent = 'caracteristicas: ' + productos[i].caracteristicas;
-        myPara2.textContent = 'precio: ' + productos[i].precio;
+        myPara2.textContent = 'precio ' + productos[i].precio;
+        myImg.src =  productos[i].imagen;
+
+
+        
 
         //myPara3.textContent = 'url';
 
@@ -67,7 +73,8 @@ function showproductos() {
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
+        myArticle.appendChild(myImg);
+        
     
         section.appendChild(myArticle);
       }
